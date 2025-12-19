@@ -5,7 +5,7 @@ lang: en
 url: "https://samizo-aitl.github.io"
 baseurl: "/mems-ana"
 
-theme: ""
+theme: minima
 
 markdown: kramdown
 kramdown:
