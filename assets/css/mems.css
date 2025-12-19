@@ -84,7 +84,10 @@
   color: #0969da;
   text-decoration: none;
 }
-.aitl-root a:hover { text-decoration: underline; }
+
+.aitl-root a:hover {
+  text-decoration: underline;
+}
 
 /* ========================================
    Media
@@ -142,6 +145,7 @@
   overflow-x: auto;
   margin: 1.2rem 0;
 }
+
 .aitl-root pre code {
   background: none;
   padding: 0;
@@ -166,7 +170,7 @@
 .aitl-root .mermaid {
   margin: 2rem auto;
   padding: 0.8rem;
-  background: #fff;
+  background: #ffffff;
   border-radius: 6px;
 }
 
