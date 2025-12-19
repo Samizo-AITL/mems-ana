@@ -5,10 +5,9 @@ lang: en
 url: "https://samizo-aitl.github.io"
 baseurl: "/aitl-controller-a-type"
 
-theme: null   # ← 最重要（Minima を殺す）
+theme: ""   # Minima を完全に無効化
 
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-  math_engine: mathjax
