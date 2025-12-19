@@ -1,9 +1,9 @@
-title: "AITL Controller A-Type"
-description: "Educational project for implementing and analyzing the AITL Controller A-Type architecture."
+title: "mems-ana"
+description: "Lightweight MEMS structural analysis tools (pre-FEM)."
 lang: en
 
 url: "https://samizo-aitl.github.io"
-baseurl: "/aitl-controller-a-type"
+baseurl: "/mems-ana"
 
 theme: ""   # Minima を完全に無効化
 
