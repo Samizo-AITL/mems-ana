@@ -5,14 +5,11 @@ title: mems-ana
 
 # mems-ana
 
-**Lightweight MEMS structural analysis tools (pre-FEM).**
+**Pre-FEM MEMS structural analysis toolkit for fast design exploration.**
 
-This repository provides lightweight analytical tools for **design-stage MEMS structural analysis**.  
-It focuses on fast evaluation of structural responses driven by:
-
-**boundary condition × geometry × drive**
-
-The primary use case is **pre-FEM / pre-TCAD design exploration**, not high-fidelity simulation.
+**mems-ana** enables rapid, lightweight evaluation of MEMS structural responses  
+driven by **boundary condition × geometry × electrical drive**,  
+*before* committing to full FEM or TCAD simulations.
 
 ---
 
@@ -24,27 +21,39 @@ The primary use case is **pre-FEM / pre-TCAD design exploration**, not high-fide
 
 ---
 
+## What This Is
+
+- **Pre-FEM / pre-TCAD structural analysis**
+- Fast comparison of **stress distributions and trends**
+- Design-stage insight, not high-fidelity accuracy
+- Intended for **engineers making early design decisions**
+
+---
+
 ## Scope
 
-- Structural stress / strain analysis for MEMS
-- Simplified models including PZT and thin-film layers
-- 2D and reduced-order analytical approaches
-- Fast parameter sweep for early design decisions
+### In Scope
+- MEMS structural stress / strain evaluation
+- PZT-driven and thin-film layered structures
+- 2D and reduced-order analytical models
+- Voltage, geometry, and boundary-condition sweeps
+- Visualization for design review (maps, curves, animations)
 
-**Out of scope:**
-
-- High-accuracy FEM
-- Full process or material nonlinearity modeling
-- Circuit or control simulation
+### Out of Scope
+- High-accuracy FEM correlation
+- Full process or material nonlinearity
+- Circuit, control, or system-level simulation
+- Time-dependent hysteresis or dynamics (unless explicitly added)
 
 ---
 
 ## Typical Use Cases
 
 - Estimating stress scaling with applied voltage
-- Comparing boundary conditions and geometries
-- Identifying critical regions before FEM
-- Generating figures for design reviews
+- Comparing boundary conditions and anchor designs
+- Screening geometries before FEM
+- Identifying stress concentration regions
+- Generating figures for design reviews and discussions
 
 ---
 
@@ -53,25 +62,29 @@ The primary use case is **pre-FEM / pre-TCAD design exploration**, not high-fide
 ```text
 mems-ana/
 ├─ src/        # core analytical models
-├─ examples/   # PZT, arch, and boundary-condition examples
-├─ figs/       # output figures
+├─ examples/   # representative use cases (PZT, arch, BC comparison)
+├─ figs/       # output figures and animations
+├─ docs/       # analysis items, assumptions, scaling notes
 └─ README.md
 ```
+
+---
+
+## Design Philosophy
+
+- **Fast over perfect**
+- **Relative comparison over absolute accuracy**
+- **Insight over completeness**
+- **FEM is a downstream tool, not the starting point**
 
 ---
 
 ## Status
 
 Work in progress.  
-APIs, models, and directory structure may change.
+Models, APIs, and directory structure may evolve as the design space expands.
 
 ---
 
-## Philosophy
-
-- **Fast over perfect**
-- **Insight over completeness**
-- **Design-stage first**
-
----
-
+*mems-ana is built to answer one question efficiently:*  
+**“Which designs are worth running FEM on next?”**
