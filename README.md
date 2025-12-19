@@ -1,8 +1,3 @@
----
-title: mems-ana
-description: Lightweight MEMS structural analysis tools (pre-FEM)
----
-
 # mems-ana
 
 **Lightweight MEMS structural analysis tools (pre-FEM).**
