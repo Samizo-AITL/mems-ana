@@ -1,0 +1,14 @@
+title: "AITL Controller A-Type"
+description: "Educational project for implementing and analyzing the AITL Controller A-Type architecture."
+lang: en
+
+url: "https://samizo-aitl.github.io"
+baseurl: "/aitl-controller-a-type"
+
+theme: null   # ← 最重要（Minima を殺す）
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax
