@@ -1,11 +1,11 @@
 /*
-  AITL Docs Layout – GitHub-like clean UI
+  mems-ana Docs Layout – GitHub-like clean UI
 */
 
 /* ========================================
    Root layout
 ======================================== */
-.aitl-root {
+.mems-ana {
   font-family: -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Helvetica, Arial, sans-serif;
   line-height: 1.75;
@@ -14,34 +14,39 @@
   margin: 0;
 }
 
-.aitl-root .wrapper,
-.aitl-root .main-container {
+.mems-ana .wrapper {
   max-width: 960px;
   margin: 0 auto;
   padding: 2rem 1.4rem;
 }
 
+.mems-ana .main-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 1.4rem 2rem;
+}
+
 /* ========================================
    Header
 ======================================== */
-.aitl-root .page-header {
+.mems-ana .page-header {
   border-bottom: 1px solid #e1e4e8;
   background: #fafbfc;
   padding: 1.2rem 0;
 }
 
-.aitl-root .site-title {
-  font-size: 1.9rem;
+.mems-ana .site-title {
+  font-size: 2.1rem;
   margin: 0;
   font-weight: 600;
 }
 
-.aitl-root .site-title a {
+.mems-ana .site-title a {
   text-decoration: none;
   color: #24292e;
 }
 
-.aitl-root .site-description {
+.mems-ana .site-description {
   margin: 0.4rem 0 0.2rem;
   color: #57606a;
   font-size: 0.98rem;
@@ -50,29 +55,29 @@
 /* ========================================
    Headings
 ======================================== */
-.aitl-root h1,
-.aitl-root h2,
-.aitl-root h3,
-.aitl-root h4 {
+.mems-ana h1,
+.mems-ana h2,
+.mems-ana h3,
+.mems-ana h4 {
   font-weight: 600;
   margin-top: 2rem;
   margin-bottom: 0.9rem;
 }
 
-.aitl-root h1,
-.aitl-root h2 {
+.mems-ana h1,
+.mems-ana h2 {
   border-bottom: 1px solid #eaecef;
   padding-bottom: 0.35rem;
 }
 
-.aitl-root h1 { font-size: 1.9rem; }
-.aitl-root h2 { font-size: 1.45rem; }
-.aitl-root h3 { font-size: 1.22rem; }
+.mems-ana h1 { font-size: 1.6rem; }
+.mems-ana h2 { font-size: 1.35rem; }
+.mems-ana h3 { font-size: 1.18rem; }
 
 /* ========================================
    Text spacing
 ======================================== */
-.aitl-root p {
+.mems-ana p {
   margin-top: 0.4rem;
   margin-bottom: 0.8rem;
 }
@@ -80,28 +85,28 @@
 /* ========================================
    Links
 ======================================== */
-.aitl-root a {
+.mems-ana a {
   color: #0969da;
   text-decoration: none;
 }
 
-.aitl-root a:hover {
+.mems-ana a:hover {
   text-decoration: underline;
 }
 
 /* ========================================
    Media
 ======================================== */
-.aitl-root img,
-.aitl-root video,
-.aitl-root iframe {
+.mems-ana img,
+.mems-ana video,
+.mems-ana iframe {
   max-width: 100%;
 }
 
 /* ========================================
    Tables (GitHub Style)
 ======================================== */
-.aitl-root table {
+.mems-ana table {
   width: 100%;
   border-collapse: collapse;
   margin: 1.6em 0;
@@ -110,25 +115,25 @@
   overflow: hidden;
 }
 
-.aitl-root th,
-.aitl-root td {
+.mems-ana th,
+.mems-ana td {
   border: 1px solid #d0d7de;
   padding: 0.65em 0.9em;
 }
 
-.aitl-root th {
+.mems-ana th {
   background: #f6f8fa;
   font-weight: 600;
 }
 
-.aitl-root tr:nth-child(2n) {
+.mems-ana tr:nth-child(2n) {
   background: #f6f8fa55;
 }
 
 /* ========================================
    Code
 ======================================== */
-.aitl-root code {
+.mems-ana code {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas;
   background: #f6f8fa;
   padding: 0.15em 0.35em;
@@ -137,7 +142,7 @@
   font-size: 0.92em;
 }
 
-.aitl-root pre {
+.mems-ana pre {
   background: #f6f8fa;
   border: 1px solid #d0d7de;
   border-radius: 6px;
@@ -146,7 +151,7 @@
   margin: 1.2rem 0;
 }
 
-.aitl-root pre code {
+.mems-ana pre code {
   background: none;
   padding: 0;
   border: none;
@@ -155,7 +160,7 @@
 /* ========================================
    Blockquotes
 ======================================== */
-.aitl-root blockquote {
+.mems-ana blockquote {
   margin: 1.2em 0;
   padding: 0.8em 1em;
   border-left: 4px solid #d0d7de;
@@ -167,7 +172,7 @@
 /* ========================================
    Mermaid
 ======================================== */
-.aitl-root .mermaid {
+.mems-ana .mermaid {
   margin: 2rem auto;
   padding: 0.8rem;
   background: #ffffff;
@@ -177,7 +182,7 @@
 /* ========================================
    Footer
 ======================================== */
-.aitl-root .page-footer {
+.mems-ana .page-footer {
   border-top: 1px solid #e1e4e8;
   margin-top: 3rem;
   padding: 1.5rem 0 2rem;
