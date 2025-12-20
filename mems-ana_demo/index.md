@@ -1,6 +1,6 @@
 ---
+layout: default
 title: mems-ana_demo
-description: d33-dominant MEMS piezoelectric hysteresis visualization (frozen demo snapshot)
 ---
 
 # mems-ana_demo  
