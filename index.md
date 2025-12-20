@@ -91,7 +91,7 @@ This directory is intentionally **frozen**:
 
 ---
 
-# 👤 8.　Author
+## 👤 Author
 
 | 📌 Item | Details |
 |--------|---------|
@@ -105,7 +105,7 @@ This directory is intentionally **frozen**:
 
 ---
 
-# 📄 9. License
+## 📄 License
 
 [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/mems-ana//#-license)
 
@@ -118,7 +118,7 @@ This directory is intentionally **frozen**:
 
 ---
 
-# 💬 10.　Feedback
+## 💬　Feedback
 
 > Suggestions, improvements, and discussions are welcome via GitHub Discussions.
 
