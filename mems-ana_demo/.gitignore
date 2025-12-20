@@ -1,0 +1,19 @@
+# generated
+outputs/
+
+# python cache
+__pycache__/
+*.py[cod]
+
+# venv
+.venv/
+venv/
+
+# build
+*.egg-info/
+dist/
+build/
+
+# IDE/OS
+.vscode/
+.DS_Store
