@@ -3,91 +3,83 @@ layout: default
 title: mems-ana
 ---
 
-# mems-ana
+# mems-ana  
+**Lightweight MEMS structural analysis tools (pre-FEM)**
 
-**Pre-FEM MEMS structural analysis toolkit for fast design exploration.**
+`mems-ana` is a lightweight toolkit for **pre-FEM shape sanity checks** of MEMS structures,  
+focused on **d33-dominant piezoelectric (PZT) actuation**.
 
-**mems-ana** enables rapid, lightweight evaluation of MEMS structural responses  
-driven by **boundary condition × geometry × electrical drive**,  
-*before* committing to full FEM or TCAD simulations.
-
----
-
-## 🔗 Links
-
-| Language | GitHub Pages 🌐 | GitHub 💻 |
-|----------|----------------|-----------|
-| 🇺🇸 English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/mems-ana/) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/mems-ana/tree/main) |
+This page is a **visual entry point**.  
+For design intent and assumptions, see the repository README.
 
 ---
 
-## What This Is
+## What is shown here
 
-- **Pre-FEM / pre-TCAD structural analysis**
-- Fast comparison of **stress distributions and trends**
-- Design-stage insight, not high-fidelity accuracy
-- Intended for **engineers making early design decisions**
+- Out-of-plane displacement `uz(x, y)`
+- d33-dominant actuation with simplified ferroelectric hysteresis
+- **Voltage-driven analysis only**
+  - Current **I is NOT modeled**
+- Absolute displacement visualization  
+  (offset at 0 V is allowed)
 
----
-
-## Scope
-
-### In Scope
-- MEMS structural stress / strain evaluation
-- PZT-driven and thin-film layered structures
-- 2D and reduced-order analytical models
-- Voltage, geometry, and boundary-condition sweeps
-- Visualization for design review (maps, curves, animations)
-
-### Out of Scope
-- High-accuracy FEM correlation
-- Full process or material nonlinearity
-- Circuit, control, or system-level simulation
-- Time-dependent hysteresis or dynamics (unless explicitly added)
+This is **not FEM**.  
+It is used *before FEM* to check shape, symmetry, and trend consistency.
 
 ---
 
-## Typical Use Cases
+## Demo animation (recommended)
 
-- Estimating stress scaling with applied voltage
-- Comparing boundary conditions and anchor designs
-- Screening geometries before FEM
-- Identifying stress concentration regions
-- Generating figures for design reviews and discussions
+**d33-dominant uz(x, y), 10 voltage cycles**
+
+- positive-only `uz`
+- color / z-range fixed: **0–500 nm**
+- geometric aspect ratio preserved
+- rising / falling branches included
+
+![](mems-ana_demo/outputs/anims/uz_midplane_typical_d33_10cycles.gif)
 
 ---
 
-## Directory Structure
+## Static reference plots
 
-```text
-mems-ana/
-├─ src/        # core analytical models
-├─ examples/   # representative use cases (PZT, arch, BC comparison)
-├─ figs/       # output figures and animations
-├─ docs/       # analysis items, assumptions, scaling notes
-└─ README.md
+Representative static results from the same model assumptions.
+
+![](mems-ana_demo/outputs/figs/uz_midplane_static8_d33_matchButterfly.png)
+
+---
+
+## Modeling assumptions (explicit)
+
+- Constitutive relation (simplified):
+  - `S(E) = d33 * (P/Pm) * Ez + Q * P(Ez)^2`
+  - `uz ≈ S(E) * t_pzt`
+- P(E) includes up/down branches (hysteresis)
+- Absolute displacement is used (no zero-shift correction)
+- This model prioritizes **shape consistency**, not material accuracy
+
+---
+
+## Demo snapshot policy
+
+All figures and animations shown here come from:
+
+```
+mems-ana_demo/
 ```
 
----
-
-## Design Philosophy
-
-- **Fast over perfect**
-- **Relative comparison over absolute accuracy**
-- **Insight over completeness**
-- **FEM is a downstream tool, not the starting point**
+This directory is intentionally **frozen**:
+- no refactor
+- no dependency update
+- used as a reproducible reference snapshot
 
 ---
 
-## Status
+## Repository
 
-Work in progress.  
-Models, APIs, and directory structure may evolve as the design space expands.
-
----
-
-*mems-ana is built to answer one question efficiently:*  
-**“Which designs are worth running FEM on next?”**
+- GitHub: https://github.com/Samizo-AITL/mems-ana
+- Demo snapshot: `mems-ana_demo/`
+- Core logic: `src/mems_ana/`
 
 ---
 
