@@ -81,15 +81,11 @@ This directory is intentionally **frozen**:
 - no dependency update
 - used as a reproducible reference snapshot
 
----
+🔗 **GitHub Pages**  
+[https://github.com/Samizo-AITL/mems-ana/mems-ana_core/](https://samizo-aitl.github.io/mems-ana/mems-ana_demo/)
 
-## Repository
-
-- **GitHub**:  
-  [https://github.com/Samizo-AITL/mems-ana](https://github.com/Samizo-AITL/mems-ana)
-
-- **Demo snapshot (frozen reference)**:  
-  [https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_demo](https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_demo)
+🔗 **GitHub (source)**  
+[https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_core](https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_demo)
 
 ---
 
