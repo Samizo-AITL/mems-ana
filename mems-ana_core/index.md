@@ -1,6 +1,7 @@
 ---
-title: "mems-ana_core | Calibrated MEMS Plate ROM"
 layout: default
+title: mems-ana_core
+permalink: /mems-ana_core/
 ---
 
 # mems-ana_core
