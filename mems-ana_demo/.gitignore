@@ -1,19 +1,33 @@
-# generated
-outputs/
+# =========================
+# generated (default ignore)
+# =========================
+outputs/**
 
+# ---- exceptions (demo artifacts to keep) ----
+!outputs/anims/
+!outputs/anims/uz_midplane_typical_d33_10cycles.gif
+
+# =========================
 # python cache
+# =========================
 __pycache__/
 *.py[cod]
 
+# =========================
 # venv
+# =========================
 .venv/
 venv/
 
-# build
+# =========================
+# build artifacts
+# =========================
 *.egg-info/
 dist/
 build/
 
-# IDE/OS
+# =========================
+# IDE / OS
+# =========================
 .vscode/
 .DS_Store
