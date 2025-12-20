@@ -96,6 +96,24 @@ This directory is intentionally **frozen**:
 
 ---
 
+## 🧩 Design Core (ROM)
+
+For **design-oriented analysis (not visualization)**,  
+this project provides a calibrated Reduced Order Model (ROM).
+
+### mems-ana_core
+- Plate + piezo unimorph ROM
+- Pre-FEM frequency response and displacement analysis
+- Shape factor **K_W** calibrated and contract-tested with pytest
+
+🔗 **GitHub Pages**  
+https://samizo-aitl.github.io/mems-ana/mems-ana_core/
+
+🔗 **GitHub (source)**  
+https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_core
+
+---
+
 ## 👤 Author
 
 | 📌 Item | Details |
