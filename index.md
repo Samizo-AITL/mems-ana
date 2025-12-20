@@ -55,6 +55,13 @@ Representative static results from the same model assumptions.
 
 <img src="https://raw.githubusercontent.com/Samizo-AITL/mems-ana/main/mems-ana_demo/outputs/figs/uz_midplane_static8_d33_matchButterfly.png" width="80%">
 
+## Static reference plots
+
+Representative static results from the same model assumptions.
+
+<img src="https://raw.githubusercontent.com/Samizo-AITL/mems-ana/main/mems-ana_demo/outputs/figs/uz_midplane_static8_d33_matchButterflyAbs_fixed0to500nm_ZEXAG.png" width="80%">
+
+
 ---
 
 ## Modeling assumptions (explicit)
