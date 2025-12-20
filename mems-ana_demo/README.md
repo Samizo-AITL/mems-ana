@@ -10,6 +10,14 @@ mechanical displacement fields.
 
 ---
 
+## 🔗 Links
+
+| Language | GitHub Pages 🌐 | GitHub 💻 |
+|----------|----------------|-----------|
+| 🇺🇸 English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/mems-ana/mems-ana_demo/) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_demo) |
+
+---
+
 ## Overview
 
 - Electrical input: **P–Ez hysteresis (voltage-driven only)**
