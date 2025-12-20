@@ -53,7 +53,7 @@ It is used *before FEM* to check shape, symmetry, and trend consistency.
 
 Representative static results from the same model assumptions.
 
-<img src="http://raw.githubusercontent.com/Samizo-AITL/mems-ana/main/mems-ana_demo/outputs/figs/uz_midplane_static8_d33_matchButterfly.png" width="80%">
+<img src="https://raw.githubusercontent.com/Samizo-AITL/mems-ana/main/mems-ana_demo/outputs/figs/uz_midplane_static8_d33_matchButterfly.png" width="80%">
 
 ---
 
