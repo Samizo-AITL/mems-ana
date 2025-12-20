@@ -104,7 +104,7 @@ this project provides a calibrated Reduced Order Model (ROM).
 - Shape factor **K_W** calibrated and contract-tested with pytest
 
 🔗 **GitHub Pages**  
-[https://github.com/Samizo-AITL/mems-ana/mems-ana_core/](https://github.com/Samizo-AITL/mems-ana/mems-ana_core/)
+[https://github.com/Samizo-AITL/mems-ana/mems-ana_core/](https://samizo-aitl.github.io/mems-ana/mems-ana_core/)
 
 🔗 **GitHub (source)**  
 [https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_core](https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_core)
