@@ -55,7 +55,6 @@ Representative static results from the same model assumptions.
 
 <img src="https://raw.githubusercontent.com/Samizo-AITL/mems-ana/main/mems-ana_demo/outputs/figs/uz_midplane_static8_d33_matchButterflyAbs_fixed0to500nm_ZEXAG.png" width="80%">
 
-
 ---
 
 ## Modeling assumptions (explicit)
@@ -86,25 +85,14 @@ This directory is intentionally **frozen**:
 
 ## Repository
 
-- GitHub:  
-  http://github.com/Samizo-AITL/mems-ana
+- **GitHub**:  
+  [https://github.com/Samizo-AITL/mems-ana](https://github.com/Samizo-AITL/mems-ana)
 
-- Demo snapshot (frozen reference):  
-  http://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_demo
+- **Demo snapshot (frozen reference)**:  
+  [https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_demo](https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_demo)
 
-- Core logic (active development):  
-  http://github.com/Samizo-AITL/mems-ana/tree/main/src/mems_ana
-
-## Repository
-
-- GitHub:  
-  https://github.com/Samizo-AITL/mems-ana
-
-- Demo snapshot (frozen reference):  
-  https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_demo
-
-- Core logic (active development):  
-  https://github.com/Samizo-AITL/mems-ana/tree/main/src/mems_ana
+- **Core logic (active development)**:  
+  [https://github.com/Samizo-AITL/mems-ana/tree/main/src/mems_ana](https://github.com/Samizo-AITL/mems-ana/tree/main/src/mems_ana)
 
 ---
 
