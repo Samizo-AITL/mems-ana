@@ -16,6 +16,14 @@ mechanical displacement patterns.
 
 ---
 
+## 🔗 Links
+
+| Language | GitHub Pages 🌐 | GitHub 💻 |
+|----------|----------------|-----------|
+| 🇺🇸 English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/mems-ana/mems-ana_demo/) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_demo) |
+
+---
+
 ## 1. Electrical input: P–Ez hysteresis (V-only)
 <img src="http://raw.githubusercontent.com/Samizo-AITL/mems-ana/main/mems-ana_demo/outputs/figs/pzt_pe_hysteresis_1d.png" width="80%">
 
