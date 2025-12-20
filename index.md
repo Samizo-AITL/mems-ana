@@ -53,7 +53,7 @@ It is used *before FEM* to check shape, symmetry, and trend consistency.
 
 Representative static results from the same model assumptions.
 
-![](mems-ana_demo/outputs/figs/uz_midplane_static8_d33_matchButterfly.png)
+<img src="http://raw.githubusercontent.com/Samizo-AITL/mems-ana/main/mems-ana_demo/outputs/figs/uz_midplane_static8_d33_matchButterfly.png" width="80%">
 
 ---
 
@@ -85,9 +85,14 @@ This directory is intentionally **frozen**:
 
 ## Repository
 
-- GitHub: https://github.com/Samizo-AITL/mems-ana
-- Demo snapshot: `mems-ana_demo/`
-- Core logic: `src/mems_ana/`
+- GitHub:  
+  http://github.com/Samizo-AITL/mems-ana
+
+- Demo snapshot (frozen reference):  
+  http://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_demo
+
+- Core logic (active development):  
+  http://github.com/Samizo-AITL/mems-ana/tree/main/src/mems_ana
 
 ---
 
