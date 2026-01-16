@@ -119,7 +119,7 @@ this project provides a calibrated Reduced Order Model (ROM).
 
 ## 📄 License
 
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/mems-ana//#-license)
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/mems-ana/#---license)
 
 | 📌 Item | License | Description |
 |--------|---------|-------------|
