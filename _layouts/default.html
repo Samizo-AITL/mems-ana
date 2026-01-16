@@ -4,18 +4,13 @@
   <meta charset="UTF-8">
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="{{ '/assets/css/mems.css' | relative_url }}">
 </head>
 
 <body class="mems-ana">
-  <header class="page-header">
-    <div class="wrapper">
-      <h1 class="site-title">
-        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      </h1>
-      <p class="site-description">{{ site.description }}</p>
-    </div>
-  </header>
+
+  <!-- header intentionally removed -->
 
   <main class="main-container">
     {{ content }}
@@ -26,5 +21,6 @@
       © {{ site.time | date: "%Y" }} mems-ana
     </div>
   </footer>
+
 </body>
 </html>
