@@ -1,7 +1,17 @@
-# mems-ana_core
+# 🧠 mems-ana_core
 
-Calibrated **Reduced Order Model (ROM)** for MEMS rectangular plates  
-with piezoelectric unimorph actuation.
+**mems-ana_core** is a calibrated **Reduced Order Model (ROM)** for  
+rectangular MEMS diaphragms with **Si + PZT unimorph actuation**.
+
+It is designed explicitly for **pre-FEM analysis**, providing a compact but  
+physically consistent framework to evaluate:
+
+- 🟦 Natural frequencies
+- 📈 Frequency response functions (FRF)
+- 📍 Center displacement
+- ⚡ Electrical terminal behavior (V–I)
+
+—all within a **single, unified electromechanical model**.
 
 ---
 
@@ -13,79 +23,74 @@ with piezoelectric unimorph actuation.
 
 ---
 
-## Overview
+## ✨ Key Features
 
-`mems-ana_core` is a lightweight analysis core for MEMS diaphragms  
-composed of a silicon substrate and a PZT thin film.
-
-It provides a unified model for:
-
-- Natural frequencies
-- Center displacement FRF
-- Piezoelectric terminal current (V–I)
-
-targeted at **pre-FEM design stages**.
+- 📐 **Kirchhoff–Love plate theory**–based formulation
+- ⚡ Piezoelectric eigenstrain  
+  → bending moment → curvature → displacement
+- 🔁 **Modal superposition–based FRF** evaluation
+- 🧪 Physics-level **contract tests** using `pytest`
+- 🧊 Shape factor **`K_W`** treated as a *single-point calibrated parameter*
 
 ---
 
-## Core Design Principles
+## 🎯 Calibration Policy (Important)
 
-### 1. Shape Factor `K_W`
+This ROM introduces a **shape factor `K_W`**, which aggregates the effects of:
 
-- `K_W` aggregates geometry, boundary conditions, and modal shape effects
-- It is calibrated using **a single reference point**
-- After calibration, it acts only as a **linear scaling factor**
+- Plate geometry
+- Mechanical boundary conditions
+- Mode shape normalization
 
-This linearity is enforced by a pytest contract test:
+### Calibration rules
+
+- `K_W` is calibrated at **one reference operating point**  
+  (from FEM or experimental measurement)
+- After calibration, `K_W` acts as a **pure linear scaling factor**
+- **Electrical quantities (V–I)** are **strictly independent of `K_W`**
+
+This separation is **explicitly enforced and verified** by the following test:
 
 ```text
 mems_ana/tests/test_kw_scaling.py
 ```
 
----
-
-### 2. Electrical–Mechanical Separation
-
-- Electrical quantities (capacitance, loss, current)  
-  do **not** depend on `K_W`
-- Mechanical displacement scales linearly with `K_W`
+✅ This guarantees **mechanical scaling without electrical contamination**.
 
 ---
 
-## Example Usage
+## 🧭 Intended Use Cases
 
-```bash
-python -m mems_ana.examples.plate_static
-python -m mems_ana.examples.plate_frf_vi
+- Early-stage MEMS diaphragm design
+- Order-of-magnitude and sensitivity studies prior to FEM
+- Educational and analysis reference models
+- Control-oriented resonance / Q-factor estimation
+
+---
+
+## 📁 Directory Structure (Excerpt)
+
+```text
+mems-ana_core/
+├─ mems_ana/
+│  ├─ geometry/
+│  ├─ materials/
+│  ├─ physics/
+│  ├─ rom/
+│  ├─ solver/
+│  └─ tests/
+├─ pyproject.toml
+├─ README.md
+└─ CHANGELOG.md
 ```
 
 ---
 
-## Testing
+## 🧊 Status
 
-```bash
-pytest mems_ana/tests
-```
+- ✔ ROM structure finalized
+- ✔ `K_W` calibration completed
+- ✔ All tests passing
+- ✔ Published on GitHub
 
-All tests must pass to guarantee physical consistency  
-and API-level contracts of the ROM.
-
----
-
-## Intended Applications
-
-- Early MEMS structural design
-- Pre-FEM scaling and sensitivity studies
-- Educational and reference implementations
-- Control bandwidth and Q-factor estimation
-
----
-
-## Status
-
-- ✔ ROM: complete
-- ✔ Calibration: complete
-- ✔ Tests: PASS
-- ✔ GitHub: published
-
-This module is **frozen as a design-grade analysis core**.
+**This module is frozen as a design-ready ROM.**
