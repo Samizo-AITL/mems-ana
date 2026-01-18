@@ -120,56 +120,6 @@ this project provides a calibrated **Reduced Order Model (ROM)**.
 
 | 📌 Item | License | Description |
 |--------|---------|-------------|
-| **Source Code** | **MIT License** | Free to use, modify, and redistribute |
-| **Text Materials** | CC BY 4.0 / CC BY-SA 4.0 | Attribution required |
-| **Figures & Diagrams** | CC BY-NC 4.0 | Non-commercial use only |
-| **External References** | Original license applies | Cite properly |
-
----
-
-## 💬 Feedback
-
-> Suggestions, improvements, and discussions are welcome via GitHub Discussions.
-
-[![💬 GitHub Discussions](https://img.shields.io/badge/💬%20GitHub-Discussions-brightgreen?logo=github)](https://github.com/Samizo-AITL/mems-ana/discussions)
-
----
-
-## 🧩 Design Core (ROM)
-
-For **design-oriented analysis (not visualization)**,  
-this project provides a calibrated **Reduced Order Model (ROM)**.
-
-### mems-ana_core
-
-- 🧱 Plate + piezo unimorph ROM  
-- 📊 Pre-FEM frequency response and displacement analysis  
-- 🧪 Shape factor **K_W** calibrated and contract-tested with pytest  
-
-🔗 **GitHub Pages**  
-https://samizo-aitl.github.io/mems-ana/mems-ana_core/
-
-🔗 **GitHub (source)**  
-https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_core
-
----
-
-## 👤 Author
-
-| 📌 Item | Details |
-|--------|---------|
-| **Name** | Shinichi Samizo |
-| **Expertise** | Semiconductor devices (logic, memory, high-voltage mixed-signal)<br>Thin-film piezo actuators for inkjet systems<br>PrecisionCore printhead productization, BOM management, ISO training |
-| **GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
-
----
-
-## 📄 License
-
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/mems-ana/#---license)
-
-| 📌 Item | License | Description |
-|--------|---------|-------------|
 | **Source Code** | [**MIT License**](https://opensource.org/licenses/MIT) | Free to use, modify, and redistribute |
 | **Text Materials** | [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/) or [**CC BY-SA 4.0**](https://creativecommons.org/licenses/by-sa/4.0/) | Attribution required; share-alike applies for BY-SA |
 | **Figures & Diagrams** | [**CC BY-NC 4.0**](https://creativecommons.org/licenses/by-nc/4.0/) | Non-commercial use only |
