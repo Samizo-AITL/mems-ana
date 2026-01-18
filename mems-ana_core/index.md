@@ -4,19 +4,20 @@ title: mems-ana_core
 permalink: /mems-ana_core/
 ---
 
-# mems-ana_core
+# 🧠 mems-ana_core
 
 **mems-ana_core** is a calibrated **Reduced Order Model (ROM)** for  
-rectangular MEMS diaphragms with Si + PZT unimorph actuation.
+rectangular MEMS diaphragms with **Si + PZT unimorph actuation**.
 
-It is designed for **pre-FEM analysis** and enables consistent evaluation of:
+It is designed explicitly for **pre-FEM analysis**, providing a compact but  
+physically consistent framework to evaluate:
 
-- Natural frequencies
-- Frequency response functions (FRF)
-- Center displacement
-- Electrical terminal behavior (V–I)
+- 🟦 Natural frequencies
+- 📈 Frequency response functions (FRF)
+- 📍 Center displacement
+- ⚡ Electrical terminal behavior (V–I)
 
-within a single, physically consistent framework.
+—all within a **single, unified electromechanical model**.
 
 ---
 
@@ -28,48 +29,52 @@ within a single, physically consistent framework.
 
 ---
 
-## Key Features
+## ✨ Key Features
 
-- 📐 Kirchhoff–Love plate theory
-- ⚡ Piezo eigenstrain → bending moment → curvature → displacement
-- 🔁 Modal superposition–based FRF
-- 🧪 Physics-level contract tests using `pytest`
-- 🧊 Shape factor **K_W** treated as a 1-point calibrated parameter
+- 📐 **Kirchhoff–Love plate theory**–based formulation
+- ⚡ Piezoelectric eigenstrain  
+  → bending moment → curvature → displacement
+- 🔁 **Modal superposition–based FRF** evaluation
+- 🧪 Physics-level **contract tests** using `pytest`
+- 🧊 Shape factor **`K_W`** treated as a *single-point calibrated parameter*
 
 ---
 
-## Calibration Policy (Important)
+## 🎯 Calibration Policy (Important)
 
-This ROM introduces a **shape factor `K_W`** that aggregates:
+This ROM introduces a **shape factor `K_W`**, which aggregates the effects of:
 
 - Plate geometry
-- Boundary conditions
+- Mechanical boundary conditions
 - Mode shape normalization
 
-The policy is:
+### Calibration rules
 
-- `K_W` is calibrated at **one reference point** (FEM or measurement)
+- `K_W` is calibrated at **one reference operating point**  
+  (from FEM or experimental measurement)
 - After calibration, `K_W` acts as a **pure linear scaling factor**
-- Electrical quantities are **independent of `K_W`**
+- **Electrical quantities (V–I)** are **strictly independent of `K_W`**
 
-This behavior is guaranteed by the following test:
+This separation is **explicitly enforced and verified** by the following test:
 
 ```text
 mems_ana/tests/test_kw_scaling.py
 ```
 
+✅ This guarantees **mechanical scaling without electrical contamination**.
+
 ---
 
-## Intended Use Cases
+## 🧭 Intended Use Cases
 
 - Early-stage MEMS diaphragm design
-- Order-of-magnitude and sensitivity analysis before FEM
-- Educational and analysis templates
-- Control-oriented frequency/Q estimation
+- Order-of-magnitude and sensitivity studies prior to FEM
+- Educational and analysis reference models
+- Control-oriented resonance / Q-factor estimation
 
 ---
 
-## Directory Structure (Excerpt)
+## 📁 Directory Structure (Excerpt)
 
 ```text
 mems-ana_core/
@@ -87,11 +92,11 @@ mems-ana_core/
 
 ---
 
-## Status
+## 🧊 Status
 
 - ✔ ROM structure finalized
-- ✔ K_W calibration completed
-- ✔ Tests passing
+- ✔ `K_W` calibration completed
+- ✔ All tests passing
 - ✔ Published on GitHub
 
 **This module is frozen as a design-ready ROM.**
