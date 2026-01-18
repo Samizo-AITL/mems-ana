@@ -3,7 +3,7 @@ layout: default
 title: mems-ana
 ---
 
-# mems-ana  
+# 🧩 mems-ana  
 **Lightweight MEMS structural analysis tools (pre-FEM)**
 
 `mems-ana` is a lightweight toolkit for **pre-FEM shape sanity checks** of MEMS structures,  
@@ -22,34 +22,34 @@ For design intent and assumptions, see the repository README.
 
 ---
 
-## What is shown here
+## 👀 What is shown here
 
-- Out-of-plane displacement `uz(x, y)`
-- d33-dominant actuation with simplified ferroelectric hysteresis
-- **Voltage-driven analysis only**
+- 📈 Out-of-plane displacement `uz(x, y)`  
+- ⚡ d33-dominant actuation with simplified ferroelectric hysteresis  
+- 🔌 **Voltage-driven analysis only**
   - Current **I is NOT modeled**
-- Absolute displacement visualization  
-  (offset at 0 V is allowed)
+- 📐 Absolute displacement visualization  
+  *(offset at 0 V is allowed)*
 
 This is **not FEM**.  
-It is used *before FEM* to check shape, symmetry, and trend consistency.
+It is used *before FEM* to check **shape**, **symmetry**, and **trend consistency**.
 
 ---
 
-## Demo animation (recommended)
+## ▶ Demo animation (recommended)
 
 **d33-dominant uz(x, y), 10 voltage cycles**
 
-- positive-only `uz`
-- color / z-range fixed: **0–500 nm**
-- geometric aspect ratio preserved
-- rising / falling branches included
+- ➕ positive-only `uz`  
+- 🎨 color / z-range fixed: **0–500 nm**  
+- 📏 geometric aspect ratio preserved  
+- 🔁 rising / falling branches included  
 
 ![](mems-ana_demo/outputs/anims/uz_midplane_typical_d33_10cycles.gif)
 
 ---
 
-## Static reference plots
+## 🖼 Static reference plots
 
 Representative static results from the same model assumptions.
 
@@ -57,18 +57,18 @@ Representative static results from the same model assumptions.
 
 ---
 
-## Modeling assumptions (explicit)
+## 🧮 Modeling assumptions (explicit)
 
-- Constitutive relation (simplified):
+- Constitutive relation *(simplified)*:
   - `S(E) = d33 * (P/Pm) * Ez + Q * P(Ez)^2`
   - `uz ≈ S(E) * t_pzt`
-- P(E) includes up/down branches (hysteresis)
-- Absolute displacement is used (no zero-shift correction)
-- This model prioritizes **shape consistency**, not material accuracy
+- 🔄 P(E) includes up/down branches *(hysteresis)*  
+- 📐 Absolute displacement is used *(no zero-shift correction)*  
+- 🎯 This model prioritizes **shape consistency**, not material accuracy  
 
 ---
 
-## Demo snapshot policy
+## 📸 Demo snapshot policy
 
 All figures and animations shown here come from:
 
@@ -77,33 +77,35 @@ mems-ana_demo/
 ```
 
 This directory is intentionally **frozen**:
-- no refactor
-- no dependency update
-- used as a reproducible reference snapshot
+
+- 🔒 no refactor  
+- 🔒 no dependency update  
+- 📌 used as a reproducible reference snapshot  
 
 🔗 **GitHub Pages**  
-[https://github.com/Samizo-AITL/mems-ana/mems-ana_core/](https://samizo-aitl.github.io/mems-ana/mems-ana_demo/)
+https://samizo-aitl.github.io/mems-ana/mems-ana_demo/
 
 🔗 **GitHub (source)**  
-[https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_core](https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_demo)
+https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_demo
 
 ---
 
 ## 🧩 Design Core (ROM)
 
 For **design-oriented analysis (not visualization)**,  
-this project provides a calibrated Reduced Order Model (ROM).
+this project provides a calibrated **Reduced Order Model (ROM)**.
 
 ### mems-ana_core
-- Plate + piezo unimorph ROM
-- Pre-FEM frequency response and displacement analysis
-- Shape factor **K_W** calibrated and contract-tested with pytest
+
+- 🧱 Plate + piezo unimorph ROM  
+- 📊 Pre-FEM frequency response and displacement analysis  
+- 🧪 Shape factor **K_W** calibrated and contract-tested with pytest  
 
 🔗 **GitHub Pages**  
-[https://github.com/Samizo-AITL/mems-ana/mems-ana_core/](https://samizo-aitl.github.io/mems-ana/mems-ana_core/)
+https://samizo-aitl.github.io/mems-ana/mems-ana_core/
 
 🔗 **GitHub (source)**  
-[https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_core](https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_core)
+https://github.com/Samizo-AITL/mems-ana/tree/main/mems-ana_core
 
 ---
 
